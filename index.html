@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Eleanor Chen Research Lab</title>
+        <meta name="Description" content="Principle Investigator: Eleanor Chen, Institution: University of Washington, Department: Pathology, Category: Academia, Length: 1 page" />
+        <meta name="robots" content="index,follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <link rel="icon" type="image/jpg" href="./img/uw-thumb.jpg">
+        <link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-app="mainApp" ng-controller="booController">
+    <aside id="loadingContainer"><img src='img/loading.gif'></aside>
+    <section id="nav-container" class="absolute-left">
+    </section>
+    <header>
+        <section id="head-portrait">
+            <img src="img/portrait.jpg" alt="portrait"/>
+        </section>
+        <section id="head-icon">
+            <img src="img/uw.jpg" alt="UW Icon"/>
+        </section>
+        <section id="head-title">
+            <div class="title" ng-bind="boo.title"></div>
+            <div class="subtitle" ng-bind="boo.institution"></div>
+            <div class="subtitle" ng-bind="boo.department"></div>
+            <div class="subtitle" ng-bind="boo.subtitle"></div>
+            <p class="title-break"/>
+            <div class="contact-info" ng-repeat="item in boo.contactInfo" ng-bind="item.info"></div>
+            <div class="contact-info">email: <a href="mailto:eleanor2@uw.edu">eleanor2@uw.edu</a></div>
+        </section>
+    </header>
+    <main>
+        <a name="researchInterest" class="anchor" id="researchInterestAnchor"></a>
+        <section class="section" id="section1">
+            <div class="inner">{{researchInterest}}</div>
+        </section>
+        <a name="publications" id="publicationsAnchor" class="anchor"></a>
+        <section class="section" id="section2">
+            <h2>Publications</h2>
+            <div class="inner">
+                <ul>
+                <li ng-repeat="item in publications" class="publication" style="{{item.style}}"><b>{{item.title}}</b><p>{{item.journal}}<p/><p>{{item.authors}}<a ng-if="item.url" href="{{item.url}}" target="_blank" class="search">&nbsp;&nbsp;🔎</a></p></li>
+                </ul>
+                </a>
+            </div>
+        </section>
+        <a name="labMembers" id="labMembersAnchor" class="anchor"></a>
+        <section class="section" id="section3">
+            <h2>Lab Members</h2>
+            <div class="inner" ng-controller="labMembersController as lb">
+                <div class="d1" >
+                    <p ng-repeat="item in labMembers | filter:'active'" imgsrc="{{item.imgsrc}}" ng-click="lb.setCurrent(item.imgsrc)" itemid="{{item.id}}" ng-class='[member, {memberSelected:item.imgsrc==defaultLabImage}]'>{{item.name}} <span class="subtitle">{{item.title}}</span>
+                    </p>
+                </div>
+                <div class="d2">
+                    <img id="labImage" ng-src="{{defaultLabImage}}" class="img-thumbnail"/>
+                </div>
+            </div>
+        </section>
+        <a name="imageGallery" id="imageGalleryAnchor" class="anchor"></a>
+        <section class="section" id="section4">
+            <h2>Photo Gallery</h2>
+            <div id="imageGalleryContainer" class="inner" ng-controller="imageController as image">
+                <div class="d1">
+                    <img ng-repeat="item in imageGallery" ng-src="{{item.imgsrc}}" class="imgChooser" ng-class="{imgChooserSelected:item.id == currentGalleryImage}" title="{{item.title}}" ng-click="image.setCurrent(item.id)"/>
+                </div>
+                <div class="d2">
+                        <figure ng-show="currentGalleryImage == item.id" ng-repeat="item in imageGallery" id="{{item.id}}_container" ng-class="[imageGalleryMember, {imageGalleryMemberSelected:item.id == currentGalleryImage}]">
+                            <img id="{{item.id}}" ng-src="{{item.imgsrc}}" class="img-thumbnail" title="{{item.title}}"  />
+                            <figcaption id="title_{{item.id}}" imgid="{{item.id}}" class="imageGalleryTitle" >{{item.title}}</figcaption>
+                        </figure>
+                </div>
+            </div>
+        </section>
+        <footer>
+            visited {{visitCount}}
+        </footer>
+    </main>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/boo.js"></script>
+</body>
+</html>
