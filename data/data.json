@@ -20,13 +20,36 @@
       {"category": "labMembers", "target": "#section3 .inner"},
       {"category": "imageGallery", "target": "#section4 .inner"}
     ],
-    "researchInterest": "Our main research interest is in understanding pathogenesis of cancer using zebrafish and mammalian experimental systems.  Our current research focuses on dissecting cellular and molecular mechanisms underlying pediatric rhabdomyosarcoma, in particular the key events regulating tumor differentiation, relapse and metastasis. My laboratory utilizes chemical genetic, genomic and genome engineering approaches to identify key driver events of rhabdomyosarcoma.",
-    "publications": [{
+    "researchInterest": "Our main research interest is in understanding pathogenesis of cancer using zebrafish and mammalian experimental systems.  Our current research focuses on dissecting cellular and molecular mechanisms underlying the pathogenesis of pediatric rhabdomyosarcoma, in particular the key events regulating tumor differentiation, relapse and metastasis. My laboratory utilizes chemical genetic, genomic and genome engineering approaches to identify key driver events of rhabdomyosarcoma.",
+    "publications": [
+    {
+        "title": "CRISPR screen identifies the NCOR/HDAC3 complex as a major suppressor of differentiation in rhabdomyosarcoma.",
+        "authors": "Phelps MP, Bailey JN, Vleeshouwer-Neumann T, Chen EY.",
+        "journal": "Proceedings of the National Academy of Sciences of the United States of America. 2016",
+        "PMID": "27956629",
+        "url": "http://www.ncbi.nlm.nih.gov/pubmed/?term=27956629"
+    },
+    {
+        "title": "Head and Neck Rhabdomyosarcoma: Clinical and Pathologic Characterization of Seven Cases.",
+        "authors": "Chen E, Ricciotti R, Futran N, Oda D.",
+        "journal": "Head and neck pathology. 2016",
+        "PMID": "27896667",
+        "url": "http://www.ncbi.nlm.nih.gov/pubmed/?term=27896667"
+    },
+    {
+        "title": "Class I Histone Deacetylase HDAC1 and WRN RECQ Helicase Contribute Additively to Protect Replication Forks upon Hydroxyurea-induced Arrest.",
+        "authors": "Kehrli K, Phelps M, Lazarchuk P, Chen E, Monnat R Jr, Sidorova JM.",
+        "journal": "The Journal of biological chemistry. 2016; 291(47):24487-24503.",
+        "PMID": "27672210",
+        "url": "http://www.ncbi.nlm.nih.gov/pubmed/?term=27672210"
+    },
+
+    {
         "title": "Zebrafish Rhabdomyosarcoma.",
         "authors": "Phelps M, Chen E.",
         "journal": "Adv Exp Med Biol. 2016;916:371-89. doi: 10.1007/978-3-319-30654-4_16.",
         "PMID": "27165362",
-        "url": ""
+        "url": "http://www.ncbi.nlm.nih.gov/pubmed/?term=27165362"
     }, {
         "title": "Histone Deacetylase Inhibitors Antagonize Distinct Pathways to Suppress Tumorigenesis of Embryonal Rhabdomyosarcoma.",
         "authors": "Vleeshouwer-Neumann T, Phelps M, Bammler TK, MacDonald JW, Jenkins I, Chen EY.",
@@ -200,33 +223,40 @@
             "status": "active",
             "id": "8"
         }, {
+            "imgsrc": "./img/monica02072017.jpeg",
+            "name": "Monica Bui",
+            "title": "Undergraduate Research Assistant",
+            "status": "active",
+            "id": "9"
+        }
+        ,{
             "imgsrc": "./img/lauren07052016.jpeg",
             "name": "Lauren Jackson",
             "title": "STEMPREP Student Assistant",
             "status": "dormant",
-            "id": "9"
+            "id": "10"
         },
 
         {
             "name": "Jenna Bailey",
             "title": "Undergraduate Researcher",
             "status": "dormant",
-            "id": "10"
+            "id": "11"
         }, {
             "name": "Nicole Hickman",
             "title": "Former Undergraduate Researcher, 2014-2015",
             "status": "dormant",
-            "id": "11"
+            "id": "12"
         }, {
             "name": "Zack York",
             "title": "Medical Student, Summer Research Internship Program, University of Pittsburgh Medical School, Summer of 2014",
             "status": "dormant",
-            "id": "12"
+            "id": "13"
         }, {
             "name": "Christopher McDonald",
             "title": "STEMPREP Program, Summer of 2015",
             "status": "dormant",
-            "id": "13"
+            "id": "14"
         }
     ],
     "imageGallery": [{
@@ -256,6 +286,15 @@
             "hfactor": "16",
             "width": "450",
             "height": "322"
+        },
+        {
+            "id": "image4",
+            "imgsrc": "./img/gallery4.jpg",
+            "title": "Rhabdomyosarcoma cells induced to form spheres in growth factor-enriched stem cell media",
+            "wfactor": "9",
+            "hfactor": "16",
+            "width": "450",
+            "height": "342"
         }
 
     ],
