@@ -51,7 +51,10 @@
             <h2>Lab Members</h2>
             <div class="inner" ng-controller="labMembersController as lb">
                 <div class="d1" >
-                    <p ng-repeat="item in labMembers | filter:'active'" imgsrc="{{item.imgsrc}}" ng-click="lb.setCurrent(item.imgsrc)" itemid="{{item.id}}" ng-class='[member, {memberSelected:item.imgsrc==defaultLabImage}]'>{{item.name}} <span class="subtitle">{{item.title}}</span>
+                    <p id="{{item.id}}_member" ng-repeat="item in labMembers | filter:'active'" imgsrc="{{item.imgsrc}}" ng-if="item.imgsrc" ng-click="lb.setCurrent(item.imgsrc, this)" itemid="{{item.id}}" ng-class='[member, {memberSelected:item.imgsrc==defaultLabImage}]'>{{item.name}} <span class="subtitle">{{item.title}}</span>
+                    </p>
+                     <br/>
+                     <p id="{{item.id}}_member" ng-repeat="item in labMembers | filter:'link'" itemid="{{item.id}}" class="text-muted"><a href="{{item.linksrc}}" title="{{item.title}}" target="_blank">{{item.name}} </a>
                     </p>
                 </div>
                 <div class="d2">

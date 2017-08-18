@@ -275,6 +275,16 @@ height: 0;
 width: 0;
 cursor:pointer;
 }
+a.sublink {
+margin-left: 1em;
+font-size: 0.95em;
+color: #585454;
+display: inline-block;
+margin-top: 0.5em;
+}
+a:visited {
+  color: #585454;
+}
 img-thumbnail {
 display: inline-block;
 max-width: 100%;

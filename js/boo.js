@@ -54,7 +54,6 @@ function getCount() {
 
 function setCount() {
   $.getJSON( "./data/data.php?method=visitCount", function(data) {
-    console.log(data[0])
     var ct = data[0].count;
     ct = parseInt(ct) + 1;
     $.ajax({
@@ -115,8 +114,11 @@ mainApp.controller('imageController', function($scope) {
 });
 
 mainApp.controller('labMembersController', function($scope) {
-  this.setCurrent = function(val) {
+  this.setCurrent = function(val, obj) {
     if (val !== null) $scope.defaultLabImage = val;
+    $(".sublink").hide();
+    console.log(obj)
+    if (obj) $("#"+obj.item.id+"_member").find(".sublink").show();
   };
 });
 
