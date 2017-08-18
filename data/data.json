@@ -20,7 +20,7 @@
       {"category": "labMembers", "target": "#section3 .inner"},
       {"category": "imageGallery", "target": "#section4 .inner"}
     ],
-    "researchInterest": "Our main research interest is in understanding pathogenesis of cancer using zebrafish and mammalian experimental systems.  Our current research focuses on dissecting cellular and molecular mechanisms underlying the pathogenesis of pediatric rhabdomyosarcoma, in particular the key events regulating tumor differentiation, relapse and metastasis. My laboratory utilizes chemical genetic, genomic and genome engineering approaches to identify key driver events of rhabdomyosarcoma.",
+    "researchInterest": "Our main research interest is in understanding pathogenesis of cancer using zebrafish and mammalian experimental systems.  Our current research focuses on dissecting cellular and molecular mechanisms underlying the pathogenesis of pediatric rhabdomyosarcoma, in particular the key events regulating tumor differentiation, relapse and metastasis. My laboratory utilizes chemical genetic, functional genomic and genome engineering approaches to identify key driver events of rhabdomyosarcoma.",
     "publications": [
     {
         "title": "CRISPR screen identifies the NCOR/HDAC3 complex as a major suppressor of differentiation in rhabdomyosarcoma.",
@@ -43,7 +43,6 @@
         "PMID": "27672210",
         "url": "http://www.ncbi.nlm.nih.gov/pubmed/?term=27672210"
     },
-
     {
         "title": "Zebrafish Rhabdomyosarcoma.",
         "authors": "Phelps M, Chen E.",
@@ -225,38 +224,47 @@
         }, {
             "imgsrc": "./img/monica02072017.jpeg",
             "name": "Monica Bui",
-            "title": "Undergraduate Research Assistant",
+            "title": "Undergraduate Assistant",
             "status": "active",
             "id": "9"
+        },
+        {
+            "title": "Lab Outing - Rattlesnake Hike 08/16/2017",
+            "linksrc": "https://www.flickr.com/photos/125683675@N04/sets/72157685226789283",
+            "name": "Lab Outing - Rattlesnake Hike 08/16/2017",
+            "status": "active",
+            "type": "link",
+            "id": "10"
+
         }
         ,{
             "imgsrc": "./img/lauren07052016.jpeg",
             "name": "Lauren Jackson",
             "title": "STEMPREP Student Assistant",
             "status": "dormant",
-            "id": "10"
+            "id": "11"
         },
 
         {
             "name": "Jenna Bailey",
             "title": "Undergraduate Researcher",
             "status": "dormant",
-            "id": "11"
+            "id": "12"
         }, {
             "name": "Nicole Hickman",
             "title": "Former Undergraduate Researcher, 2014-2015",
             "status": "dormant",
-            "id": "12"
+            "id": "13"
         }, {
             "name": "Zack York",
             "title": "Medical Student, Summer Research Internship Program, University of Pittsburgh Medical School, Summer of 2014",
             "status": "dormant",
-            "id": "13"
+            "id": "14"
         }, {
             "name": "Christopher McDonald",
             "title": "STEMPREP Program, Summer of 2015",
             "status": "dormant",
-            "id": "14"
+            "id": "15"
         }
     ],
     "imageGallery": [{
